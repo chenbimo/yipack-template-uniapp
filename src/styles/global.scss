@@ -1,0 +1,38 @@
+body {
+    overflow-x: hidden;
+    font-family: 'lucida Grande', Verdana, 'Microsoft YaHei';
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-contain,
+.bg-cover {
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.bg-contain {
+    background-size: contain;
+}
+.bg-cover {
+    background-size: cover;
+}
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+// ::-webkit-scrollbar {
+//     width: 2px;
+//     height: 2px;
+// }
+// ::-webkit-scrollbar-thumb {
+//     background-color: #60c4ff;
+// }
+// ::-webkit-scrollbar-track {
+//     background-color: #012062;
+// }

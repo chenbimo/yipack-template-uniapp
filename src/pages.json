@@ -1,16 +1,57 @@
 {
     "pages": [
         {
-            "path": "pages/index/index",
+            "path": "pages/index",
             "style": {
-                "navigationBarTitleText": "uni-app"
+                "navigationBarTitleText": "首页"
+            }
+        },
+        {
+            "path": "pages/news",
+            "style": {
+                "navigationBarTitleText": "新闻"
+            }
+        },
+        {
+            "path": "pages/user",
+            "style": {
+                "navigationBarTitleText": "个人"
             }
         }
     ],
+    "tabBar": {
+        "color": "#7A7E83",
+        "selectedColor": "#3cc51f",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "list": [
+            {
+                "pagePath": "pages/index",
+                "iconPath": "/static/tabbar/1-disable.png",
+                "selectedIconPath": "/static/tabbar/1-enable.png",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/news",
+                "iconPath": "/static/tabbar/2-disable.png",
+                "selectedIconPath": "/static/tabbar/2-enable.png",
+                "text": "新闻"
+            },
+            {
+                "pagePath": "pages/user",
+                "iconPath": "/static/tabbar/4-disable.png",
+                "selectedIconPath": "/static/tabbar/4-enable.png",
+                "text": "个人"
+            }
+        ]
+    },
     "globalStyle": {
         "navigationBarTextStyle": "black",
         "navigationBarTitleText": "uni-app",
         "navigationBarBackgroundColor": "#F8F8F8",
         "backgroundColor": "#F8F8F8"
+    },
+    "easycom": {
+        "^u-(.*)": "@/assets/uview-ui/components/u-$1/u-$1.vue"
     }
 }

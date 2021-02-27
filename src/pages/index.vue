@@ -1,5 +1,7 @@
 <template>
-    <scroll-view class="page-index container" scroll-y scroll-with-animation></scroll-view>
+    <scroll-view class="page-index container" scroll-y scroll-with-animation>
+        <navigator src="/pages/detail">跳转到detail页面</navigator>
+    </scroll-view>
 </template>
 
 <script>
